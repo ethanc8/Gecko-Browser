@@ -1,24 +1,24 @@
 apply plugin: 'com.android.application'
 
 ext {
-    geckoviewChannel = "-beta" //if nightly or beta wanted use "-nightly" or "-beta"
-    geckoviewVersion = "80.0.20200728204253"
+    geckoviewChannel = "" //if nightly or beta wanted use "-nightly" or "-beta"
+    geckoviewVersion = "115.0.20230726201356"
 }
 
 android {
     namespace "com.example.geckobrowser"
 
-    compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    compileSdkVersion 33
+    buildToolsVersion "34.0.0"
 
     defaultConfig {
         applicationId "com.example.geckobrowser"
         minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 1050
-        versionName "0.5.0"
+        targetSdkVersion 33
+        versionCode 1051
+        versionName "0.5.1-gecko115.0.20230726201356"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
